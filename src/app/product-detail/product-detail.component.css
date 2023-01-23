@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.card-body {
+  height: 350px;
+  border-radius: 20px;
+}
+.detail {
+  margin-top: 100px;
+}
+.back{
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+}

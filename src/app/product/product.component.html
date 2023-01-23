@@ -1,0 +1,8 @@
+<i class="fa-regular fa-face-smile-beam"></i>
+<div class="container">
+  <div class="row">
+    <app-product-item *ngFor="let product of products" [product]="product"  (item)="showMessage($event)" class="col-4"></app-product-item>
+
+  </div>
+</div>
+

@@ -1,0 +1,31 @@
+.card {
+
+  border-radius: 20px;
+  margin-left: 130px;
+  margin-top: 50px;
+  height: 350px;
+}
+
+.form-group {
+  font-family: Brush Fonts;
+  margin: 10px;
+}
+
+.btcart {
+  margin: 20px;
+  background-color: #58caf1;
+  width: 90px;
+}
+
+.form {
+  margin: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.btform {
+  margin-left: 50px;
+  margin-top: 20px;
+}

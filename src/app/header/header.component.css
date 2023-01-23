@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #0dcaf0;
+  height: 60px;
+  margin-bottom: 40px;
+}
+.nav-link{
+  font-size: 18px;
+  font-family: Brush Fonts;
+  margin-left: 50px;
+  color: black;
+
+}
+
+.navbar-brand{
+  color: black;
+  font-family: Brush Fonts;
+  font-size: 30px;
+  font-weight: 10;
+
+
+}

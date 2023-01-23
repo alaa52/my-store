@@ -1,0 +1,59 @@
+
+    [
+        {
+            "id":1,
+            "name":"Kitchen",
+            "price":"150",
+            "description":"Thick veneer worktops provide you with the natural color and texture of wood adding warmth to your kitchen as they are pre-treated",
+            "image":"assets/kitchen.webp",
+            "count":"1"
+        },
+
+        {
+            "id":2,
+            "name":"Vase",
+            "price":"20",
+            "description":"Vase27cm ,Gorgeous flower vases as a centerpiece on a table or as an ornament on a mantel ",
+
+            "image":"assets/vasess.avif",
+            "count":"1"
+        },
+        {
+          "id":3,
+          "name":"Furniture",
+          "price":"90",
+          "description":"3-seat sofa-bed ,Relaxing after a long day is very important! Browse our amazing collection of fabric sofas and chaise longues in different colors and sizes",
+
+          "image":"assets/furniture.jpg",
+          "count":"1"
+      },
+        {
+            "id":4,
+            "name":"Decoration",
+            "price":"15",
+            "description":"frame 13x18, cmArtwork leaves it out and adds a personal touch to your home, even if you're not the artist who created it. Shop a variety of stock photos in a wide range of designs and shapes to reflect your mood",
+
+            "image":"assets/decoration.avif",
+            "count":"1"
+        },
+
+        {
+            "id":6,
+            "name":"Candles",
+            "price":"30",
+            "description":"Scented candle in a glass of 25 cm,Scented candles are a great way to relax. I can partake of that lovely scents, and the warm candlelight.",
+
+            "image":"assets/candles.avif",
+            "count":"1"
+        },
+        {
+          "id":5,
+          "name":"Flowers",
+          "price":"18",
+          "description":" artificial Flower 30cm, Give your home a distinctive touch. Potted flowers do not wilt and look fresh Artificial plant with pot, indoor/outdoor ",
+
+          "image":"assets/flowers.avif",
+          "count":"1"
+      }
+
+    ]

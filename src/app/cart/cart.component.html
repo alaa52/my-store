@@ -1,0 +1,60 @@
+
+<div class="container row" >
+  <div class="col-7">
+    <table class="table table-striped " >
+      <thead>
+        <tr>
+          <th scope="col">Count</th>
+          <th scope="col">Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Total Price</th>
+
+        </tr>
+      </thead>
+      <tbody class="t-row">
+        <tr *ngFor="let item of cart" class="t-row">
+          <th scope="row">{{item.count}}</th>
+          <td>{{item.name}}</td>
+          <td><img [src]="item.image" width="50px" height="50px"> </td>
+          <td>{{item.count*item.price |currency}}</td>
+          <td>
+            <a (click)="removeFromCart(item)" class="btn btcart">Remove</a>
+
+            <a routerLink="/product/{{item.id}}" class="btn btcart">Update</a>
+
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+</div>
+<div class="card col-4" style="width: 18rem;">
+<form class="form" [formGroup]="myForm" (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Full Name</label>
+    <input class="form-control"  formControlName="username"
+     aria-describedby="emailHelp" placeholder="min 5 characters" required minlength="5" (ngModelChange)="validateName()">
+     <!-- <small class="error" *ngIf="myForm.controls['username'].hasError('required')"> Required</small> -->
+     <small class="error" *ngIf="myForm.controls['username'].hasError('minlength')"> min length 5</small>
+     <small class="error" *ngIf="myForm.controls['username'].hasError('missnotNumber')"> Must characters</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Address</label>
+    <input  class="form-control"  formControlName="address"
+     placeholder="min 6 characters"  required minlength="5">
+     <small class="error" *ngIf="myForm.controls['address'].hasError('minlength')"> min length 5</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Credit card number</label>
+    <input type="number" class="form-control"  formControlName="masterCard"
+     placeholder="**************"  required minlength="14">
+     <small class="error" *ngIf="myForm.controls['masterCard'].hasError('minlength')"> min length 14</small>
+  </div>
+
+  <button type="submit" class="btn btn-info col-6 btform"
+   [disabled]="myForm.invalid">Submit</button>
+
+</form>
+</div>
+</div>
