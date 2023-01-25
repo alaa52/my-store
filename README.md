@@ -3,7 +3,7 @@ store Application can select number of product can desplay product detail when c
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
-# Setup 
+# Setup angular project
 
  install npm pakages dependacy 
 

@@ -14,12 +14,7 @@ export class CartComponent implements OnInit {
   cart:Product[]
   customer:Customer
   myForm:FormGroup
-  // myForm = new FormGroup({
-  //   username:new FormControl('',[Validators.required,Validators.min(5)]),
-  //   address:new FormControl(''),
-  //   masterCard:new FormControl('',[Validators.required,Validators.min(14)])
 
-  // });
   constructor(private cartService:CartService,private router:Router){
 
   }
@@ -35,6 +30,8 @@ export class CartComponent implements OnInit {
 removeFromCart(product:Product){
   this.cartService.remove(product)
   this.cart=this.cart.filter(item=>item.id !=product.id)
+  alert( product.name  +" Removed from Cart ")
+
 }
 submitForm(){
 
